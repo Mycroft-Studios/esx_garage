@@ -24,7 +24,7 @@ Citizen.CreateThread(function()
 
 		if v.IsClosed then
 
-			local blip = AddBlipForCoord(v.ExteriorEntryPoint.Pos.x, v.ExteriorEntryPoint.Pos.y, v.ExteriorEntryPoint.Pos.z)
+			local blip = AddBlipForCoord(v.pos.x, v.pos.y, v.pos.z)
 
 			SetBlipSprite (blip, 357)
 			SetBlipDisplay(blip, 4)
