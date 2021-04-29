@@ -8,14 +8,12 @@ Citizen.CreateThread(function()
 	end
 end)
 
-
-
-AddEventHandler('esx_garage:hasEnteredMarker', function(name, part, parking)
+-- AddEventHandler('esx_g-arage:hasEnteredMarker', function(name, part, parking)
 	
-end)
+-- end)
 
-AddEventHandler('esx_property:hasExitedMarker', function(name, part, parking)
-end)
+-- AddEventHandler('esx_property:hasExitedMarker', function(name, part, parking)
+-- end)
 
 -- Create Blips
 Citizen.CreateThread(function()
@@ -24,7 +22,7 @@ Citizen.CreateThread(function()
 
 		if v.IsClosed then
 
-			local blip = AddBlipForCoord(v.pos.x, v.pos.y, v.pos.z)
+			local blip = AddBlipForCoord(v.Pos.x, v.Pos.y, v.Pos.z)
 
 			SetBlipSprite (blip, 357)
 			SetBlipDisplay(blip, 4)
@@ -42,11 +40,11 @@ Citizen.CreateThread(function()
 
 end)
 
--- Display markers
-Citizen.CreateThread(function()
-end)
+-- -- Display markers
+-- CreateThread(function()
+-- end)
 
--- Enter / Exit marker events
-Citizen.CreateThread(function()
+-- -- Enter / Exit marker events
+-- Citizen.CreateThread(function()
 
-end)
+-- end)
